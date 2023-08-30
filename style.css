@@ -3,147 +3,177 @@
 
 
  body{
-    position: relative;
+  position: relative;
+}
+section#hero-section{
+  background-image: 
+    linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+    url("img/image-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20%;
+  color: white;
+  text-align: center;
+}
+section#footer-section{
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  float: left;
+}
+.text p{
+  padding: auto;
+  text-align: left;
+}
+section#project-section{
+  background-color: #d4d4d4;
+  padding: 50px 0;
+}
+section#project-section img{
+  object-fit: contain;
+
+}
+section#project-section h2{
+  padding-bottom: 50px;
+}
+section#project-section .caption {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+section#project-section a{
+  text-decoration: none;
+}
+
+section#mission-section{
+  background-color: #fafafa;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+section#mission-section h2{
+  padding-bottom: 50px;
+}
+section#mission-section .text{
+  display: flex;
+  align-items: center;
+}
+section#skills-section{
+  background-color: #d4d4d4;
+  padding: 50px 0;
+}
+section#skills-section h2{
+  padding-bottom: 50px;
+}
+section#skills-section .caption {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+section#project-section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+section#contact-section{
+  background-color: #fafafa;
+  padding: 50px;
+}
+section#contact-section h2{
+  padding-bottom: 50px;
+}
+section#hero-section img{
+  border-radius: 50%;
+  border: 5px solid #d4d4d4;
+}
+section#hero-section h2, h3{
+  text-shadow: 3px 3px rgb(80,0,0);
+}
+.col-12 img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+#css {
+  height: auto;
+}
+.caption{
+  text-align: center;
+}
+
+i{
+  font-size: 30px;
+}
+.bi-github,
+.bi-envelope,
+.bi-linkedin {
+  font-size: 50px;
+}
+#project-section-target,
+#mission-section-target,
+#skills-section-target,
+#contact-section-target{
+  position: relative;
+  top: -100px;
+}
+
+.bi-github:hover,
+.bi-envelope:hover,
+.bi-linkedin:hover{
+  color: green;
+}
+section#carousel {
+  padding: 50px 0;
+}
+section#carousel h2{
+  text-align: center;
+  padding-bottom: 50px;
+}
+section#carousel p, h5{
+  font-size: 20px;
+}
+.carousel-item img{
+  height: 50vh;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-item:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.3);
+}
+.carousel-caption{
+  z-index: 20;
+}
+
+
+#github{
+  text-align: center;
+  font-size: 100px;
+}
+
+@media (max-width: 600px){
+  section#hero-section img{
+    width: 150px;
   }
   section#hero-section{
-    background-image: 
-      linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-      url("img/image-1.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    padding: 20%;
-    color: white;
-    text-align: center;
-  }
-  section#footer-section{
-    background-color: lightgray;
-    padding: 10px;
-    text-align: center;
-  }
-  .image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    float: left;
-  }
-  .text p{
-    padding: auto;
-    text-align: left;
-  }
-  
-  section#mission-section{
-    background-color: #fafafa;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    text-align: center;
-    overflow: hidden;
-  }
-  section#mission-section h2{
-    padding-bottom: 50px;
+    font-size: 16px;
   }
   section#mission-section .text{
-    display: flex;
-    align-items: center;
-  }
-  section#skills-section{
-    background-color: #d4d4d4;
-    padding: 50px 0;
-  }
-  section#contact-section{
-    background-color: #fafafa;
-    padding: 50px;
-  }
-  section#contact-section h2{
-    padding-bottom: 50px;
-  }
-  section#hero-section img{
-    border-radius: 50%;
-    border: 5px solid #d4d4d4;
-  }
-  section#hero-section h2, h3{
-    text-shadow: 3px 3px rgb(80,0,0);
-  }
-  .col-12 img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-  #css {
-    height: auto;
-  }
-  .caption{
-    text-align: center;
-  }
+  padding: 25px;
+}
   
-  i{
-    font-size: 30px;
-  }
-  .bi-github,
-  .bi-envelope,
-  .bi-linkedin {
-    font-size: 50px;
-  }
-  
-  #mission-section-target,
-  #skills-section-target,
-  #contact-section-target{
-    position: relative;
-    top: -100px;
-  }
-  
-  .bi-github:hover,
-  .bi-envelope:hover,
-  .bi-linkedin:hover{
-    color: green;
-  }
-  section#carousel {
-    padding: 50px 0;
-  }
-  section#carousel h2{
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  section#carousel p, h5{
-    font-size: 20px;
-  }
-  .carousel-item img{
-    height: 50vh;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center;
-  }
-  .carousel-item:after {
-    content:"";
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background:rgba(0,0,0,0.3);
-  }
-  .carousel-caption{
-    z-index: 20;
-  }
-  
-  
-  #github{
-    text-align: center;
-    font-size: 100px;
-  }
-  
-  @media (max-width: 600px){
-    section#hero-section img{
-      width: 150px;
-    }
-    section#hero-section{
-      font-size: 16px;
-    }
-    section#mission-section .text{
-    padding: 25px;
-  }
-    
-  }
-  
-  
+}
+
