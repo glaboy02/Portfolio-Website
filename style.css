@@ -2,7 +2,7 @@
 
 
 
- body{
+body{
   position: relative;
 }
 section#hero-section{
@@ -173,7 +173,7 @@ section#carousel p, h5{
   }
   section#mission-section .text{
   padding: 25px;
-}
+  }
   
 }
 
