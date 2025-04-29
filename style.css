@@ -51,6 +51,9 @@ section#project-section .caption {
 section#project-section a{
   text-decoration: none;
 }
+section#project-section .col-12 {
+  padding-bottom: 1rem;
+}
 
 section#mission-section{
   background-color: #fafafa;
